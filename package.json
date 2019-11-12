@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "transform": "node -r esm scripts/transformData.js"
   },
   "dependencies": {
     "node-sass": "^4.9.0",
@@ -17,7 +18,9 @@
     "@vue/cli-plugin-babel": "^3.0.0-beta.10",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
     "@vue/cli-service": "^3.0.0-beta.10",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.13",
+    "lodash": "^4.17.15",
+    "esm": "^3.2.25"
   },
   "babel": {
     "presets": [
