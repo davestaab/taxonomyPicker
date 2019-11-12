@@ -1,14 +1,5 @@
 <template>
     <div class="treepicker flex">
-        <ProgramsTree
-            :programs="programs"
-            :filters="filtersApplied"
-            :categoryTypesActive="categoryTypesActive"
-            v-on:filter="filter( $event )"
-            v-on:filterByCategory="filterByCategory( $event )"
-            v-on:showAll="showAll()"
-            v-on:toggleType="toggleCategoryType( $event )"
-        />
         <FilteredPrograms
             :allPrograms="programs"
             :leafNodes="leafNodesOnly"
@@ -21,6 +12,15 @@
             v-on:toggleProgramSelection="toggleProgram( $event )"
             v-on:showSelected="showSelectedPrograms()"
             v-on:hideSelected="showAll()"
+        />
+        <ProgramsTree
+            :programs="programs"
+            :filters="filtersApplied"
+            :categoryTypesActive="categoryTypesActive"
+            v-on:filter="filter( $event )"
+            v-on:filterByCategory="filterByCategory( $event )"
+            v-on:showAll="showAll()"
+            v-on:toggleType="toggleCategoryType( $event )"
         />
     </div>
 </template>
@@ -35,7 +35,7 @@ import '../assets/css/treepicker.scss';
     this would be fetched in real life
     downloaded programs.xml that current RES returned, so data should be close to prod data
 */
-import * as data from '../data/programs.json';
+import * as data from '../data/pslTaxonomyData.json';
 
 //components
 import ProgramsTree from './Tree';

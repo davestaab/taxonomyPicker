@@ -1,10 +1,9 @@
 <template>
 
     <div class="treepicker_programs">
-
         <div class="treepicker_programs_header">
-            <h2 class="title">Programs</h2>
-            <p class="description">Choose one or more programs from the list below. Use the filters to the left to refine the list.</p>
+            <h2 class="title">Taxonomy</h2>
+            <p class="description">Choose one or more entries from the list below. Use the filters to the right to refine the list.</p>
 
             <Search
                 :filters="filters"
@@ -29,7 +28,6 @@
                 <p class="info resultCount">Showing {{ filteredPrograms.length }} of {{ leafNodes.length }}</p>
             </div>
         </div>
-
         <div class="treepicker_program" v-for="p in filteredPrograms">
 
             <div
@@ -81,6 +79,8 @@
 
             </div>
         </div>
+
+
 
     </div>
 </template>

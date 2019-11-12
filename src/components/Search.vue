@@ -7,7 +7,7 @@
                 v-on:input="$emit( 'searchUpdate', $event.target.value )"
                 ref="searchInput"
             />
-            <label>Search by Program Name or Key Person</label>
+            <label>Search by term</label>
         </div>
         <div class="icon">
             <svg width="17px" height="19px" viewBox="0 0 20 22" >

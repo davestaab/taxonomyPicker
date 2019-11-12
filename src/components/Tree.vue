@@ -14,9 +14,9 @@
 
 
         <p class="label">
-            Program Hierarchy
+            Taxonomy Hierarchy
         </p>
-        <p class="description">Select a group to filter the programs on the right.<br/>Once selected, groups will expand to show children, which you may select to filter the programs further.</p>
+        <p class="description">Select a group to filter the entries.<br/>Once selected, groups will expand to show children, which you may select to filter the entries further.</p>
     </div>
 
 
@@ -65,28 +65,28 @@
         </div>
     </div>
 
-    <div class="treepicker_tree_header">
-        <div class="program_types">
-            <p class="label">
-                Program Types
-            </p>
-            <p class="description">Uncheck a type to hide programs of that type on the right.</p>
-            <Button
-                text="Programs"
-                type="primary"
-                subtype="checkbox"
-                :classes="typeActive( 'programs' )"
-                v-on:clickHandler="$emit( 'toggleType', 'programs' )"
-            />
-            <Button
-                text="Indirect"
-                type="primary"
-                subtype="checkbox"
-                :classes="typeActive( 'indirect' )"
-                v-on:clickHandler="$emit( 'toggleType', 'indirect' )"
-            />
-        </div>
-    </div>
+<!--    <div class="treepicker_tree_header">-->
+<!--        <div class="program_types">-->
+<!--            <p class="label">-->
+<!--                Program Types-->
+<!--            </p>-->
+<!--            <p class="description">Uncheck a type to hide programs of that type on the right.</p>-->
+<!--            <Button-->
+<!--                text="Programs"-->
+<!--                type="primary"-->
+<!--                subtype="checkbox"-->
+<!--                :classes="typeActive( 'programs' )"-->
+<!--                v-on:clickHandler="$emit( 'toggleType', 'programs' )"-->
+<!--            />-->
+<!--            <Button-->
+<!--                text="Indirect"-->
+<!--                type="primary"-->
+<!--                subtype="checkbox"-->
+<!--                :classes="typeActive( 'indirect' )"-->
+<!--                v-on:clickHandler="$emit( 'toggleType', 'indirect' )"-->
+<!--            />-->
+<!--        </div>-->
+<!--    </div>-->
 
 </div>
 </template>
