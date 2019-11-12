@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5733ceb-53ce-4fff-bd2d-08b383b33689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/taxonomyPicker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/transformData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/pslTaxonomy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/pslTaxonomyData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/taxonomy-raw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Programs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Programs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TreePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TreePicker.vue" afterDir="false" />
+    <list default="true" id="a5733ceb-53ce-4fff-bd2d-08b383b33689" name="Default Changelist" comment="added webstorm config files">
+      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +50,26 @@
     <configuration name="transformData.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/transformData.js" working-dir="$PROJECT_DIR$/scripts">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,8 +92,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.transform" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.transform" />
         <item itemvalue="Node.js.transformData.js" />
       </list>
     </recent_temporary>
@@ -98,8 +110,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573587046742</updated>
-      <workItem from="1573587048029" duration="5669000" />
+      <workItem from="1573587048029" duration="8161000" />
     </task>
+    <task id="LOCAL-00001" summary="added webstorm config files">
+      <created>1573592843462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573592843462</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added webstorm config files take 2">
+      <created>1573592867654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573592867654</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ignoring node modules folder">
+      <created>1573592905925</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573592905925</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created script to transform raw taxonomy data to taxonomy format">
+      <created>1573592956595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573592956595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated wording to match taxonomy in UI&#10;change order of filter/taxonomy group">
+      <created>1573593835313</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573593835313</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +163,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added webstorm config files" />
+    <MESSAGE value="added webstorm config files take 2" />
+    <MESSAGE value="ignoring node modules folder" />
+    <MESSAGE value="created script to transform raw taxonomy data to taxonomy format" />
+    <MESSAGE value="updated wording to match taxonomy in UI&#10;change order of filter/taxonomy group" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated wording to match taxonomy in UI&#10;change order of filter/taxonomy group" />
   </component>
 </project>
