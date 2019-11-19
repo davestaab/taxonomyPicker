@@ -1,10 +1,12 @@
 <template>
-<div class="treepicker_tree_category_inner" :data-active="checkFilterStatus( category )">
+<div class="treepicker_tree_category_inner" :class="{ 'treepicker_tree_category_inner--disabled': isDisabled }" :data-active="checkFilterStatus( category )">
     <CategoryHeader
         :category="category"
         :type="type"
         :programsCount="calcLeafPrograms( programs )"
         :filters="filters"
+        :filteredCount="filteredCount"
+        :filterActive="filterActive"
         v-on:clickHandler="toggleFilter()"
     />
 
@@ -49,6 +51,11 @@ export default {
             type: Number,
             required: true
         },
+        filteredCount: {
+            type: Number,
+            required: true
+        },
+        filterActive: Boolean,
         programs: {
             type: Array,
             required: true
@@ -63,6 +70,11 @@ export default {
             groupedPrograms: this.groupPrograms(),
             showChildren: false
         }
+    },
+    computed: {
+      isDisabled() {
+          return this.filterActive && this.filteredCount === 0
+      }
     },
     methods: {
 
