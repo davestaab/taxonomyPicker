@@ -382,8 +382,10 @@ label{
 
             }
             &_inner--disabled {
-              color: $color-stack-light;
-              background: $color-stack-dark;
+              color: #b3a696;
+              border-color: #d8cbbc;
+              cursor: not-allowed;
+              transition: padding 0.3s;
             }
 
             &_header{
